@@ -2,20 +2,20 @@
 # Redmine Install on Debian Wheezy
 # Author: John McCarthy
 # <http://www.midactstech.blogspot.com> <https://www.github.com/Midacts>
-# Date: 23rd of March, 2014
-# Version 1.0
+# Date: 10th of September, 2014
+# Version 1.1
 #
 # To God only wise, be glory through Jesus Christ forever. Amen.
 # Romans 16:27, I Corinthians 15:1-4
 #---------------------------------------------------------------
 ######## VARIABLES ########
-redmine_version=2.4.0
+redmine_version=2.5.2
 ######## FUNCTIONS ########
 function getRedmine()
 {
 	# Downloads the latest Redmine installation files
 		echo -e '\e[34;01m+++ Getting repositories...\e[0m'
-		wget http://rubyforge.org/frs/download.php/77242/redmine-$redmine_version.tar.gz
+		wget http://www.redmine.org/releases/redmine-2.5.2.tar.gz
 	# Untars the Redmine installation files
 		tar xzf redmine-$redmine_version.tar.gz
 		echo -e '\e[01;37;42mThe latest version of Redmine have been acquired!\e[0m'
